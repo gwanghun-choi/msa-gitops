@@ -20,9 +20,6 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8081
-          envFrom:
-            - secretRef:
-                name: common-db-secret
           env:
             - name: SERVICE_B_URL
               value: "http://service-b:8082"
