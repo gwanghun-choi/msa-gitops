@@ -15,5 +15,5 @@ spec:
       resource:
         name: cpu
         target:
-          type: Utilization          # CPU 사용률 기준
-          averageUtilization: 50     # 요청 대비 50% 이상이면 스케일업
+          type: Utilization
+          averageUtilization: 50
