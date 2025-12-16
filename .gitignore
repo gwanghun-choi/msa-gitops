@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# DB Secret 파일 (로컬/운영 서버에서만 관리)
+k8s/common/db-secret.yaml
