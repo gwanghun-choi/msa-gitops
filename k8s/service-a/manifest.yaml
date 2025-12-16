@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: service-a
-          image: ghcr.io/gwanghun-choi/service-a:d3d929e8f59d8393c6f27128e0fd8e471b63674e
+          image: ghcr.io/gwanghun-choi/service-a:33895946a0432c70ca17c417ee24174db178ba83
           imagePullPolicy: Always
           ports:
             - containerPort: 8081
