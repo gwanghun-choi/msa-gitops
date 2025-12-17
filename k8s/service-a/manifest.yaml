@@ -23,6 +23,9 @@ spec:
           env:
             - name: SERVICE_B_URL
               value: "http://service-b:8082"
+          envFrom:
+            - secretRef:
+                name: db-primary-secret
           resources:
             requests:
               cpu: "100m"
@@ -59,4 +62,3 @@ spec:
       targetPort: 8081
       protocol: TCP
   type: ClusterIP
-
