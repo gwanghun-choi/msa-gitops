@@ -22,3 +22,10 @@ spec:
                 name: service-b
                 port:
                   number: 8082
+          - path: /grafana
+            pathType: Prefix
+            backend:
+              service:
+                name: kube-prometheus-stack-grafana
+                port:
+                  number: 80
