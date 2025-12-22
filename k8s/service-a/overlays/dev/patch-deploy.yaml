@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-a
+spec:
+  template:
+    metadata:
+      labels:
+        env: dev
+    spec:
+      containers:
+        - name: service-a
+          env:
+            - name: APP_ENV
+              value: dev

@@ -13,12 +13,12 @@ spec:
   source:
     repoURL: https://github.com/gwanghun-choi/msa-gitops.git
     targetRevision: main   # main 브랜치 기준
-    path: k8s/service-a    # 이 디렉터리 안의 manifest.yaml 을 읽는다
+    path: k8s/service-a/overlays/dev    # 이 디렉터리 안의 manifest.yaml 을 읽는다
 
   # ✅ 배포 대상(K8s 클러스터 + 네임스페이스)
   destination:
     server: https://kubernetes.default.svc
-    namespace: default     # service-a 를 배포할 네임스페이스
+    namespace: msa-dev    # service-a 를 배포할 네임스페이스
 
   # ✅ 자동 싱크 설정
   syncPolicy:
