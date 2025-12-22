@@ -3,7 +3,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: service-a
+  name: service-a-dev
   namespace: argocd        # ArgoCD가 설치된 네임스페이스
 
 spec:
