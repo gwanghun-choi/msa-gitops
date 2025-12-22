@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: msa.local
+    - host: dev.msa.local
       http:
         paths:
           - path: /a
