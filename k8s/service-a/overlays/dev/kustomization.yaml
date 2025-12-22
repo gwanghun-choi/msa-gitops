@@ -4,7 +4,6 @@ kind: Kustomization
 namespace: msa-dev
 
 resources:
-  - namespace.yaml
   - ../../base
 
 patches:
